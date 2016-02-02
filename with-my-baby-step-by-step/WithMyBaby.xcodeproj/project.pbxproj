@@ -1,0 +1,999 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE0B3DD71C47AC76002BDF45 /* ParentNutritionTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0B3DD61C47AC76002BDF45 /* ParentNutritionTVC.m */; };
+		CE0B3DDA1C48B2F6002BDF45 /* DoctorNutritionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0B3DD91C48B2F6002BDF45 /* DoctorNutritionViewController.m */; };
+		CE0B3DDD1C48B306002BDF45 /* DoctorNutritionDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0B3DDC1C48B306002BDF45 /* DoctorNutritionDetailsViewController.m */; };
+		CE0B3DE31C48BD73002BDF45 /* DoctorNutritionTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0B3DE21C48BD73002BDF45 /* DoctorNutritionTVC.m */; };
+		CE0B3DE61C48BE30002BDF45 /* DoctorNutritionDetailsTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0B3DE51C48BE30002BDF45 /* DoctorNutritionDetailsTVC.m */; };
+		CE0B3DE91C4A954C002BDF45 /* DoctorVaccinesTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0B3DE81C4A954C002BDF45 /* DoctorVaccinesTVC.m */; };
+		CE0B3DEC1C4A959E002BDF45 /* DoctorVaccinesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0B3DEB1C4A959E002BDF45 /* DoctorVaccinesViewController.m */; };
+		CE0B3DEF1C4A95B0002BDF45 /* DoctorVaccineDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0B3DEE1C4A95B0002BDF45 /* DoctorVaccineDetailsViewController.m */; };
+		CE0B451B1C32736900E5A789 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0B451A1C32736900E5A789 /* main.m */; };
+		CE0B451E1C32736900E5A789 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0B451D1C32736900E5A789 /* AppDelegate.m */; };
+		CE0B45241C32736900E5A789 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE0B45221C32736900E5A789 /* Main.storyboard */; };
+		CE0B45271C32736900E5A789 /* WithMyBaby.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE0B45251C32736900E5A789 /* WithMyBaby.xcdatamodeld */; };
+		CE0B452C1C32736900E5A789 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE0B452A1C32736900E5A789 /* LaunchScreen.storyboard */; };
+		CE0B454C1C327F7E00E5A789 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE0B45461C327F7E00E5A789 /* Bolts.framework */; };
+		CE0B454D1C327F7E00E5A789 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE0B45471C327F7E00E5A789 /* Parse.framework */; };
+		CE0B454E1C327F7E00E5A789 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE0B45481C327F7E00E5A789 /* ParseFacebookUtils.framework */; };
+		CE0B454F1C327F7E00E5A789 /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE0B45491C327F7E00E5A789 /* ParseFacebookUtilsV4.framework */; };
+		CE0B45501C327F7E00E5A789 /* ParseTwitterUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE0B454A1C327F7E00E5A789 /* ParseTwitterUtils.framework */; };
+		CE0B45511C327F7E00E5A789 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE0B454B1C327F7E00E5A789 /* ParseUI.framework */; };
+		CE0B45531C327FBB00E5A789 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE0B45521C327FBB00E5A789 /* AudioToolbox.framework */; };
+		CE0B45551C327FC300E5A789 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE0B45541C327FC300E5A789 /* CFNetwork.framework */; };
+		CE0B45571C327FC900E5A789 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE0B45561C327FC900E5A789 /* CoreGraphics.framework */; };
+		CE0B45591C327FCF00E5A789 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE0B45581C327FCF00E5A789 /* CoreLocation.framework */; };
+		CE0B455B1C327FD400E5A789 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE0B455A1C327FD400E5A789 /* QuartzCore.framework */; };
+		CE0B455D1C327FD900E5A789 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE0B455C1C327FD900E5A789 /* Security.framework */; };
+		CE0B45611C327FE400E5A789 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE0B45601C327FE400E5A789 /* SystemConfiguration.framework */; };
+		CE0B45631C327FE900E5A789 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE0B45621C327FE900E5A789 /* libz.tbd */; };
+		CE0B45651C327FED00E5A789 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE0B45641C327FED00E5A789 /* libsqlite3.tbd */; };
+		CE0B456E1C32827500E5A789 /* CJModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0B456D1C32827500E5A789 /* CJModel.m */; };
+		CE0B45701C32849900E5A789 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE0B456F1C32849900E5A789 /* AdSupport.framework */; };
+		CE0B45721C3284A300E5A789 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE0B45711C3284A300E5A789 /* Social.framework */; };
+		CE0B45741C3284AC00E5A789 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE0B45731C3284AC00E5A789 /* Accounts.framework */; };
+		CE0B45791C3284F600E5A789 /* libstdc++.6.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE0B45781C3284F600E5A789 /* libstdc++.6.tbd */; };
+		CE0B457B1C32851400E5A789 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE0B457A1C32851400E5A789 /* UIKit.framework */; };
+		CE0B457D1C32852500E5A789 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE0B457C1C32852500E5A789 /* Foundation.framework */; };
+		CE0B45861C32A35500E5A789 /* LaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0B45851C32A35500E5A789 /* LaunchViewController.m */; };
+		CE0B45891C32A37500E5A789 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0B45881C32A37500E5A789 /* SignUpViewController.m */; };
+		CE0B458C1C32A39900E5A789 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0B458B1C32A39900E5A789 /* SignInViewController.m */; };
+		CE45A6291C44B7A900AB9AAA /* MyChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE45A6281C44B7A900AB9AAA /* MyChildViewController.m */; };
+		CE45A62C1C44B7C100AB9AAA /* AddMyChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE45A62B1C44B7C100AB9AAA /* AddMyChildViewController.m */; };
+		CE45A62F1C44B7E800AB9AAA /* ParentNutritionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE45A62E1C44B7E800AB9AAA /* ParentNutritionViewController.m */; };
+		CE45A6321C44B7FB00AB9AAA /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE45A6311C44B7FB00AB9AAA /* SettingsViewController.m */; };
+		CE45A6351C44B82C00AB9AAA /* ParentVaccinesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE45A6341C44B82C00AB9AAA /* ParentVaccinesViewController.m */; };
+		CE45A6381C44B85400AB9AAA /* ParentVaccinesListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE45A6371C44B85400AB9AAA /* ParentVaccinesListViewController.m */; };
+		CE45A63B1C44B87100AB9AAA /* ParentVaccineDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE45A63A1C44B87100AB9AAA /* ParentVaccineDetailsViewController.m */; };
+		CE45A63E1C44B89500AB9AAA /* ParentVaccineAddExperienceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE45A63D1C44B89500AB9AAA /* ParentVaccineAddExperienceViewController.m */; };
+		CE45A6411C44B8E000AB9AAA /* ParentVaccinesExperienceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE45A6401C44B8E000AB9AAA /* ParentVaccinesExperienceViewController.m */; };
+		CE45A6441C44B8FA00AB9AAA /* ParentDiagnosisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE45A6431C44B8FA00AB9AAA /* ParentDiagnosisViewController.m */; };
+		CE45A6471C44F8AC00AB9AAA /* ButtonStyleCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE45A6461C44F8AC00AB9AAA /* ButtonStyleCollectionViewCell.m */; };
+		CE45A64A1C450B5700AB9AAA /* MyChildTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE45A6491C450B5700AB9AAA /* MyChildTVC.m */; };
+		CE45A64D1C45163500AB9AAA /* VaccinesTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE45A64C1C45163500AB9AAA /* VaccinesTVC.m */; };
+		CE45A6501C45205C00AB9AAA /* VaccinesParentExperienceTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE45A64F1C45205C00AB9AAA /* VaccinesParentExperienceTVC.m */; };
+		CE45A6601C460F3400AB9AAA /* Doctor.m in Sources */ = {isa = PBXBuildFile; fileRef = CE45A65F1C460F3400AB9AAA /* Doctor.m */; };
+		CE45A6631C46129500AB9AAA /* Parent.m in Sources */ = {isa = PBXBuildFile; fileRef = CE45A6621C46129500AB9AAA /* Parent.m */; };
+		CE45A6661C4612AC00AB9AAA /* Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = CE45A6651C4612AC00AB9AAA /* Comment.m */; };
+		CE45A6691C4612BD00AB9AAA /* Child.m in Sources */ = {isa = PBXBuildFile; fileRef = CE45A6681C4612BD00AB9AAA /* Child.m */; };
+		CE45A66C1C4612CC00AB9AAA /* Vaccine.m in Sources */ = {isa = PBXBuildFile; fileRef = CE45A66B1C4612CC00AB9AAA /* Vaccine.m */; };
+		CE45A66F1C4612DC00AB9AAA /* Nutrition.m in Sources */ = {isa = PBXBuildFile; fileRef = CE45A66E1C4612DC00AB9AAA /* Nutrition.m */; };
+		CE45A6721C4612EF00AB9AAA /* Diagnosis.m in Sources */ = {isa = PBXBuildFile; fileRef = CE45A6711C4612EF00AB9AAA /* Diagnosis.m */; };
+		CE45A6751C46130100AB9AAA /* Complaint.m in Sources */ = {isa = PBXBuildFile; fileRef = CE45A6741C46130100AB9AAA /* Complaint.m */; };
+		CE5C3D811C4E36060084685F /* ParentSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5C3D801C4E36060084685F /* ParentSignUpViewController.m */; };
+		CE5C3D871C4E36830084685F /* ParentSignUpTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5C3D861C4E36830084685F /* ParentSignUpTableViewController.m */; };
+		CE5C3D8A1C4E36A80084685F /* DoctorSignUpTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5C3D891C4E36A80084685F /* DoctorSignUpTableViewController.m */; };
+		CE5C3D941C4F55B80084685F /* ParentDiagnosisNewComplaintViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5C3D931C4F55B80084685F /* ParentDiagnosisNewComplaintViewController.m */; };
+		CE5C3D9A1C4F55E60084685F /* NewMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5C3D991C4F55E60084685F /* NewMessageViewController.m */; };
+		CE5C3D9D1C4F56110084685F /* DoctorDiagnosisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5C3D9C1C4F56110084685F /* DoctorDiagnosisViewController.m */; };
+		CE5C3DA11C4F577E0084685F /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5C3DA01C4F577E0084685F /* ChatViewController.m */; };
+		CE5C3DA41C4F5F3E0084685F /* ComplaintTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5C3DA31C4F5F3E0084685F /* ComplaintTVC.m */; };
+		CE5C3DA71C4F5F4E0084685F /* ChatTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5C3DA61C4F5F4E0084685F /* ChatTVC.m */; };
+		CE5C3DAC1C4F5FC10084685F /* InquiriesTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5C3DAB1C4F5FC10084685F /* InquiriesTVC.m */; };
+		CE5C3DAF1C50F3530084685F /* ParentVaccineExperienceDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5C3DAE1C50F3530084685F /* ParentVaccineExperienceDetailsViewController.m */; };
+		CE647BBF1C3A47B500878F94 /* DoctorMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE647BBE1C3A47B500878F94 /* DoctorMainViewController.m */; };
+		CE647BC21C3A47C200878F94 /* ParentMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE647BC11C3A47C200878F94 /* ParentMainViewController.m */; };
+		CE647BC51C3A4E9C00878F94 /* AbstractViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE647BC41C3A4E9C00878F94 /* AbstractViewController.m */; };
+		CE647BC81C3A88D100878F94 /* CJAllertManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE647BC71C3A88D100878F94 /* CJAllertManager.m */; };
+		CE647BCB1C3A8AC100878F94 /* NSString+CJString.m in Sources */ = {isa = PBXBuildFile; fileRef = CE647BCA1C3A8AC100878F94 /* NSString+CJString.m */; };
+		CE647BDA1C3CFB6400878F94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE647BD91C3CFB6400878F94 /* Assets.xcassets */; };
+		CE647BEE1C3E575F00878F94 /* AFClientManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE647BE71C3E575F00878F94 /* AFClientManager.m */; };
+		CE647BF41C3E5F9D00878F94 /* AFObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CE647BF31C3E5F9D00878F94 /* AFObject.m */; };
+		CE647BFB1C3E5FBB00878F94 /* AFParseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CE647BF91C3E5FBB00878F94 /* AFParseObject.m */; };
+		CE647BFE1C3E62B100878F94 /* AFParseSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = CE647BFD1C3E62B100878F94 /* AFParseSettings.m */; };
+		CE647C011C3E63E400878F94 /* AFManagerSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = CE647C001C3E63E400878F94 /* AFManagerSettings.m */; };
+		CE647C041C3E788900878F94 /* AFParseClientManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE647C031C3E788900878F94 /* AFParseClientManager.m */; };
+		CEF380A81C52388B00DB31D1 /* NSString+TBEncryption.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF380A71C52388B00DB31D1 /* NSString+TBEncryption.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CE0B3DD51C47AC76002BDF45 /* ParentNutritionTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParentNutritionTVC.h; sourceTree = "<group>"; };
+		CE0B3DD61C47AC76002BDF45 /* ParentNutritionTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParentNutritionTVC.m; sourceTree = "<group>"; };
+		CE0B3DD81C48B2F6002BDF45 /* DoctorNutritionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorNutritionViewController.h; sourceTree = "<group>"; };
+		CE0B3DD91C48B2F6002BDF45 /* DoctorNutritionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorNutritionViewController.m; sourceTree = "<group>"; };
+		CE0B3DDB1C48B306002BDF45 /* DoctorNutritionDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorNutritionDetailsViewController.h; sourceTree = "<group>"; };
+		CE0B3DDC1C48B306002BDF45 /* DoctorNutritionDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorNutritionDetailsViewController.m; sourceTree = "<group>"; };
+		CE0B3DE11C48BD73002BDF45 /* DoctorNutritionTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorNutritionTVC.h; sourceTree = "<group>"; };
+		CE0B3DE21C48BD73002BDF45 /* DoctorNutritionTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorNutritionTVC.m; sourceTree = "<group>"; };
+		CE0B3DE41C48BE30002BDF45 /* DoctorNutritionDetailsTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorNutritionDetailsTVC.h; sourceTree = "<group>"; };
+		CE0B3DE51C48BE30002BDF45 /* DoctorNutritionDetailsTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorNutritionDetailsTVC.m; sourceTree = "<group>"; };
+		CE0B3DE71C4A954B002BDF45 /* DoctorVaccinesTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorVaccinesTVC.h; sourceTree = "<group>"; };
+		CE0B3DE81C4A954C002BDF45 /* DoctorVaccinesTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorVaccinesTVC.m; sourceTree = "<group>"; };
+		CE0B3DEA1C4A959E002BDF45 /* DoctorVaccinesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorVaccinesViewController.h; sourceTree = "<group>"; };
+		CE0B3DEB1C4A959E002BDF45 /* DoctorVaccinesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorVaccinesViewController.m; sourceTree = "<group>"; };
+		CE0B3DED1C4A95B0002BDF45 /* DoctorVaccineDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorVaccineDetailsViewController.h; sourceTree = "<group>"; };
+		CE0B3DEE1C4A95B0002BDF45 /* DoctorVaccineDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorVaccineDetailsViewController.m; sourceTree = "<group>"; };
+		CE0B45161C32736900E5A789 /* WithMyBaby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WithMyBaby.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE0B451A1C32736900E5A789 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CE0B451C1C32736900E5A789 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CE0B451D1C32736900E5A789 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CE0B45231C32736900E5A789 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE0B45261C32736900E5A789 /* WithMyBaby.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WithMyBaby.xcdatamodel; sourceTree = "<group>"; };
+		CE0B452B1C32736900E5A789 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE0B452D1C32736900E5A789 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE0B45461C327F7E00E5A789 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		CE0B45471C327F7E00E5A789 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		CE0B45481C327F7E00E5A789 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		CE0B45491C327F7E00E5A789 /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
+		CE0B454A1C327F7E00E5A789 /* ParseTwitterUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseTwitterUtils.framework; sourceTree = "<group>"; };
+		CE0B454B1C327F7E00E5A789 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		CE0B45521C327FBB00E5A789 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		CE0B45541C327FC300E5A789 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		CE0B45561C327FC900E5A789 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CE0B45581C327FCF00E5A789 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		CE0B455A1C327FD400E5A789 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		CE0B455C1C327FD900E5A789 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		CE0B45601C327FE400E5A789 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		CE0B45621C327FE900E5A789 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		CE0B45641C327FED00E5A789 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		CE0B45681C32819B00E5A789 /* CJLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CJLibrary.h; path = CJLibrary/CJLibrary.h; sourceTree = "<group>"; };
+		CE0B456C1C32827500E5A789 /* CJModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJModel.h; sourceTree = "<group>"; };
+		CE0B456D1C32827500E5A789 /* CJModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJModel.m; sourceTree = "<group>"; };
+		CE0B456F1C32849900E5A789 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		CE0B45711C3284A300E5A789 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		CE0B45731C3284AC00E5A789 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		CE0B45781C3284F600E5A789 /* libstdc++.6.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.tbd"; path = "usr/lib/libstdc++.6.tbd"; sourceTree = SDKROOT; };
+		CE0B457A1C32851400E5A789 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CE0B457C1C32852500E5A789 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CE0B45841C32A35500E5A789 /* LaunchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchViewController.h; sourceTree = "<group>"; };
+		CE0B45851C32A35500E5A789 /* LaunchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchViewController.m; sourceTree = "<group>"; };
+		CE0B45871C32A37500E5A789 /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
+		CE0B45881C32A37500E5A789 /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
+		CE0B458A1C32A39900E5A789 /* SignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInViewController.h; sourceTree = "<group>"; };
+		CE0B458B1C32A39900E5A789 /* SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInViewController.m; sourceTree = "<group>"; };
+		CE45A6221C436EBC00AB9AAA /* AFClientManagerProtocols.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFClientManagerProtocols.h; sourceTree = "<group>"; };
+		CE45A6271C44B7A900AB9AAA /* MyChildViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyChildViewController.h; sourceTree = "<group>"; };
+		CE45A6281C44B7A900AB9AAA /* MyChildViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyChildViewController.m; sourceTree = "<group>"; };
+		CE45A62A1C44B7C100AB9AAA /* AddMyChildViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddMyChildViewController.h; sourceTree = "<group>"; };
+		CE45A62B1C44B7C100AB9AAA /* AddMyChildViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddMyChildViewController.m; sourceTree = "<group>"; };
+		CE45A62D1C44B7E800AB9AAA /* ParentNutritionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParentNutritionViewController.h; sourceTree = "<group>"; };
+		CE45A62E1C44B7E800AB9AAA /* ParentNutritionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParentNutritionViewController.m; sourceTree = "<group>"; };
+		CE45A6301C44B7FB00AB9AAA /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		CE45A6311C44B7FB00AB9AAA /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		CE45A6331C44B82C00AB9AAA /* ParentVaccinesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParentVaccinesViewController.h; sourceTree = "<group>"; };
+		CE45A6341C44B82C00AB9AAA /* ParentVaccinesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParentVaccinesViewController.m; sourceTree = "<group>"; };
+		CE45A6361C44B85400AB9AAA /* ParentVaccinesListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParentVaccinesListViewController.h; sourceTree = "<group>"; };
+		CE45A6371C44B85400AB9AAA /* ParentVaccinesListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParentVaccinesListViewController.m; sourceTree = "<group>"; };
+		CE45A6391C44B87100AB9AAA /* ParentVaccineDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParentVaccineDetailsViewController.h; sourceTree = "<group>"; };
+		CE45A63A1C44B87100AB9AAA /* ParentVaccineDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParentVaccineDetailsViewController.m; sourceTree = "<group>"; };
+		CE45A63C1C44B89500AB9AAA /* ParentVaccineAddExperienceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParentVaccineAddExperienceViewController.h; sourceTree = "<group>"; };
+		CE45A63D1C44B89500AB9AAA /* ParentVaccineAddExperienceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParentVaccineAddExperienceViewController.m; sourceTree = "<group>"; };
+		CE45A63F1C44B8E000AB9AAA /* ParentVaccinesExperienceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParentVaccinesExperienceViewController.h; sourceTree = "<group>"; };
+		CE45A6401C44B8E000AB9AAA /* ParentVaccinesExperienceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParentVaccinesExperienceViewController.m; sourceTree = "<group>"; };
+		CE45A6421C44B8FA00AB9AAA /* ParentDiagnosisViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParentDiagnosisViewController.h; sourceTree = "<group>"; };
+		CE45A6431C44B8FA00AB9AAA /* ParentDiagnosisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParentDiagnosisViewController.m; sourceTree = "<group>"; };
+		CE45A6451C44F8AC00AB9AAA /* ButtonStyleCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonStyleCollectionViewCell.h; sourceTree = "<group>"; };
+		CE45A6461C44F8AC00AB9AAA /* ButtonStyleCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonStyleCollectionViewCell.m; sourceTree = "<group>"; };
+		CE45A6481C450B5700AB9AAA /* MyChildTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyChildTVC.h; sourceTree = "<group>"; };
+		CE45A6491C450B5700AB9AAA /* MyChildTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyChildTVC.m; sourceTree = "<group>"; };
+		CE45A64B1C45163500AB9AAA /* VaccinesTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VaccinesTVC.h; sourceTree = "<group>"; };
+		CE45A64C1C45163500AB9AAA /* VaccinesTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VaccinesTVC.m; sourceTree = "<group>"; };
+		CE45A64E1C45205C00AB9AAA /* VaccinesParentExperienceTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VaccinesParentExperienceTVC.h; sourceTree = "<group>"; };
+		CE45A64F1C45205C00AB9AAA /* VaccinesParentExperienceTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VaccinesParentExperienceTVC.m; sourceTree = "<group>"; };
+		CE45A65E1C460F3400AB9AAA /* Doctor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Doctor.h; sourceTree = "<group>"; };
+		CE45A65F1C460F3400AB9AAA /* Doctor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Doctor.m; sourceTree = "<group>"; };
+		CE45A6611C46129500AB9AAA /* Parent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Parent.h; path = WithMyBaby/Parent.h; sourceTree = SOURCE_ROOT; };
+		CE45A6621C46129500AB9AAA /* Parent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Parent.m; path = WithMyBaby/Parent.m; sourceTree = SOURCE_ROOT; };
+		CE45A6641C4612AC00AB9AAA /* Comment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Comment.h; sourceTree = "<group>"; };
+		CE45A6651C4612AC00AB9AAA /* Comment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Comment.m; sourceTree = "<group>"; };
+		CE45A6671C4612BD00AB9AAA /* Child.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Child.h; sourceTree = "<group>"; };
+		CE45A6681C4612BD00AB9AAA /* Child.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Child.m; sourceTree = "<group>"; };
+		CE45A66A1C4612CC00AB9AAA /* Vaccine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vaccine.h; sourceTree = "<group>"; };
+		CE45A66B1C4612CC00AB9AAA /* Vaccine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vaccine.m; sourceTree = "<group>"; };
+		CE45A66D1C4612DC00AB9AAA /* Nutrition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Nutrition.h; sourceTree = "<group>"; };
+		CE45A66E1C4612DC00AB9AAA /* Nutrition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Nutrition.m; sourceTree = "<group>"; };
+		CE45A6701C4612EF00AB9AAA /* Diagnosis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Diagnosis.h; sourceTree = "<group>"; };
+		CE45A6711C4612EF00AB9AAA /* Diagnosis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Diagnosis.m; sourceTree = "<group>"; };
+		CE45A6731C46130100AB9AAA /* Complaint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Complaint.h; sourceTree = "<group>"; };
+		CE45A6741C46130100AB9AAA /* Complaint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Complaint.m; sourceTree = "<group>"; };
+		CE5C3D7F1C4E36060084685F /* ParentSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParentSignUpViewController.h; sourceTree = "<group>"; };
+		CE5C3D801C4E36060084685F /* ParentSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParentSignUpViewController.m; sourceTree = "<group>"; };
+		CE5C3D851C4E36830084685F /* ParentSignUpTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParentSignUpTableViewController.h; sourceTree = "<group>"; };
+		CE5C3D861C4E36830084685F /* ParentSignUpTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParentSignUpTableViewController.m; sourceTree = "<group>"; };
+		CE5C3D881C4E36A80084685F /* DoctorSignUpTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorSignUpTableViewController.h; sourceTree = "<group>"; };
+		CE5C3D891C4E36A80084685F /* DoctorSignUpTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorSignUpTableViewController.m; sourceTree = "<group>"; };
+		CE5C3D921C4F55B80084685F /* ParentDiagnosisNewComplaintViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParentDiagnosisNewComplaintViewController.h; sourceTree = "<group>"; };
+		CE5C3D931C4F55B80084685F /* ParentDiagnosisNewComplaintViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParentDiagnosisNewComplaintViewController.m; sourceTree = "<group>"; };
+		CE5C3D981C4F55E60084685F /* NewMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewMessageViewController.h; sourceTree = "<group>"; };
+		CE5C3D991C4F55E60084685F /* NewMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewMessageViewController.m; sourceTree = "<group>"; };
+		CE5C3D9B1C4F56110084685F /* DoctorDiagnosisViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorDiagnosisViewController.h; sourceTree = "<group>"; };
+		CE5C3D9C1C4F56110084685F /* DoctorDiagnosisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorDiagnosisViewController.m; sourceTree = "<group>"; };
+		CE5C3D9F1C4F577E0084685F /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
+		CE5C3DA01C4F577E0084685F /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
+		CE5C3DA21C4F5F3E0084685F /* ComplaintTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComplaintTVC.h; sourceTree = "<group>"; };
+		CE5C3DA31C4F5F3E0084685F /* ComplaintTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComplaintTVC.m; sourceTree = "<group>"; };
+		CE5C3DA51C4F5F4E0084685F /* ChatTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatTVC.h; sourceTree = "<group>"; };
+		CE5C3DA61C4F5F4E0084685F /* ChatTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatTVC.m; sourceTree = "<group>"; };
+		CE5C3DAA1C4F5FC10084685F /* InquiriesTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InquiriesTVC.h; sourceTree = "<group>"; };
+		CE5C3DAB1C4F5FC10084685F /* InquiriesTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InquiriesTVC.m; sourceTree = "<group>"; };
+		CE5C3DAD1C50F3530084685F /* ParentVaccineExperienceDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParentVaccineExperienceDetailsViewController.h; sourceTree = "<group>"; };
+		CE5C3DAE1C50F3530084685F /* ParentVaccineExperienceDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParentVaccineExperienceDetailsViewController.m; sourceTree = "<group>"; };
+		CE647BBD1C3A47B500878F94 /* DoctorMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorMainViewController.h; sourceTree = "<group>"; };
+		CE647BBE1C3A47B500878F94 /* DoctorMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorMainViewController.m; sourceTree = "<group>"; };
+		CE647BC01C3A47C200878F94 /* ParentMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParentMainViewController.h; sourceTree = "<group>"; };
+		CE647BC11C3A47C200878F94 /* ParentMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParentMainViewController.m; sourceTree = "<group>"; };
+		CE647BC31C3A4E9C00878F94 /* AbstractViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractViewController.h; sourceTree = "<group>"; };
+		CE647BC41C3A4E9C00878F94 /* AbstractViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractViewController.m; sourceTree = "<group>"; };
+		CE647BC61C3A88D100878F94 /* CJAllertManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJAllertManager.h; sourceTree = "<group>"; };
+		CE647BC71C3A88D100878F94 /* CJAllertManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJAllertManager.m; sourceTree = "<group>"; };
+		CE647BC91C3A8AC100878F94 /* NSString+CJString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CJString.h"; sourceTree = "<group>"; };
+		CE647BCA1C3A8AC100878F94 /* NSString+CJString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CJString.m"; sourceTree = "<group>"; };
+		CE647BD91C3CFB6400878F94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE647BE61C3E575F00878F94 /* AFClientManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFClientManager.h; sourceTree = "<group>"; };
+		CE647BE71C3E575F00878F94 /* AFClientManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFClientManager.m; sourceTree = "<group>"; };
+		CE647BE91C3E575F00878F94 /* AFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFoundation.h; sourceTree = "<group>"; };
+		CE647BF21C3E5F9D00878F94 /* AFObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFObject.h; sourceTree = "<group>"; };
+		CE647BF31C3E5F9D00878F94 /* AFObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFObject.m; sourceTree = "<group>"; };
+		CE647BF81C3E5FBB00878F94 /* AFParseObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFParseObject.h; sourceTree = "<group>"; };
+		CE647BF91C3E5FBB00878F94 /* AFParseObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFParseObject.m; sourceTree = "<group>"; };
+		CE647BFC1C3E62B100878F94 /* AFParseSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFParseSettings.h; sourceTree = "<group>"; };
+		CE647BFD1C3E62B100878F94 /* AFParseSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFParseSettings.m; sourceTree = "<group>"; };
+		CE647BFF1C3E63E400878F94 /* AFManagerSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFManagerSettings.h; sourceTree = "<group>"; };
+		CE647C001C3E63E400878F94 /* AFManagerSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFManagerSettings.m; sourceTree = "<group>"; };
+		CE647C021C3E788900878F94 /* AFParseClientManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFParseClientManager.h; sourceTree = "<group>"; };
+		CE647C031C3E788900878F94 /* AFParseClientManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFParseClientManager.m; sourceTree = "<group>"; };
+		CEF380A61C52388B00DB31D1 /* NSString+TBEncryption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TBEncryption.h"; sourceTree = "<group>"; };
+		CEF380A71C52388B00DB31D1 /* NSString+TBEncryption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TBEncryption.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE0B45131C32736900E5A789 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE0B457D1C32852500E5A789 /* Foundation.framework in Frameworks */,
+				CE0B457B1C32851400E5A789 /* UIKit.framework in Frameworks */,
+				CE0B45791C3284F600E5A789 /* libstdc++.6.tbd in Frameworks */,
+				CE0B45551C327FC300E5A789 /* CFNetwork.framework in Frameworks */,
+				CE0B45531C327FBB00E5A789 /* AudioToolbox.framework in Frameworks */,
+				CE0B45741C3284AC00E5A789 /* Accounts.framework in Frameworks */,
+				CE0B45721C3284A300E5A789 /* Social.framework in Frameworks */,
+				CE0B45701C32849900E5A789 /* AdSupport.framework in Frameworks */,
+				CE0B45651C327FED00E5A789 /* libsqlite3.tbd in Frameworks */,
+				CE0B45631C327FE900E5A789 /* libz.tbd in Frameworks */,
+				CE0B45611C327FE400E5A789 /* SystemConfiguration.framework in Frameworks */,
+				CE0B455D1C327FD900E5A789 /* Security.framework in Frameworks */,
+				CE0B455B1C327FD400E5A789 /* QuartzCore.framework in Frameworks */,
+				CE0B45591C327FCF00E5A789 /* CoreLocation.framework in Frameworks */,
+				CE0B45571C327FC900E5A789 /* CoreGraphics.framework in Frameworks */,
+				CE0B45511C327F7E00E5A789 /* ParseUI.framework in Frameworks */,
+				CE0B454D1C327F7E00E5A789 /* Parse.framework in Frameworks */,
+				CE0B454C1C327F7E00E5A789 /* Bolts.framework in Frameworks */,
+				CE0B454F1C327F7E00E5A789 /* ParseFacebookUtilsV4.framework in Frameworks */,
+				CE0B454E1C327F7E00E5A789 /* ParseFacebookUtils.framework in Frameworks */,
+				CE0B45501C327F7E00E5A789 /* ParseTwitterUtils.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE0B450D1C32736900E5A789 = {
+			isa = PBXGroup;
+			children = (
+				CE0B45381C327F6100E5A789 /* Frameworks */,
+				CE0B45181C32736900E5A789 /* WithMyBaby */,
+				CE0B45171C32736900E5A789 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE0B45171C32736900E5A789 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE0B45161C32736900E5A789 /* WithMyBaby.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE0B45181C32736900E5A789 /* WithMyBaby */ = {
+			isa = PBXGroup;
+			children = (
+				CE0B45351C327B9D00E5A789 /* Controllers */,
+				CE0B45371C327BB100E5A789 /* Model */,
+				CE0B45341C327B9300E5A789 /* Views */,
+				CE0B45331C327B7F00E5A789 /* Resources */,
+				CE0B45191C32736900E5A789 /* Supporting Files */,
+			);
+			path = WithMyBaby;
+			sourceTree = "<group>";
+		};
+		CE0B45191C32736900E5A789 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE0B452D1C32736900E5A789 /* Info.plist */,
+				CE0B451A1C32736900E5A789 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CE0B45331C327B7F00E5A789 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CE647BD91C3CFB6400878F94 /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		CE0B45341C327B9300E5A789 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CE0B45221C32736900E5A789 /* Main.storyboard */,
+				CE0B452A1C32736900E5A789 /* LaunchScreen.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		CE0B45351C327B9D00E5A789 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE0B451C1C32736900E5A789 /* AppDelegate.h */,
+				CE0B451D1C32736900E5A789 /* AppDelegate.m */,
+				CE647BB81C3A3B6100878F94 /* TVC */,
+				CE647BB91C3A3B6900878F94 /* CVC */,
+				CE0B45361C327BA500E5A789 /* ViewControllers */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		CE0B45361C327BA500E5A789 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE647BC31C3A4E9C00878F94 /* AbstractViewController.h */,
+				CE647BC41C3A4E9C00878F94 /* AbstractViewController.m */,
+				CE0B45841C32A35500E5A789 /* LaunchViewController.h */,
+				CE0B45851C32A35500E5A789 /* LaunchViewController.m */,
+				CE5C3D9F1C4F577E0084685F /* ChatViewController.h */,
+				CE5C3DA01C4F577E0084685F /* ChatViewController.m */,
+				CE5C3D981C4F55E60084685F /* NewMessageViewController.h */,
+				CE5C3D991C4F55E60084685F /* NewMessageViewController.m */,
+				CE45A6301C44B7FB00AB9AAA /* SettingsViewController.h */,
+				CE45A6311C44B7FB00AB9AAA /* SettingsViewController.m */,
+				CE45A6241C43AA0600AB9AAA /* Authentication */,
+				CE45A6261C43AAB200AB9AAA /* Parent */,
+				CE45A6251C43AA6200AB9AAA /* Doctor */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CE0B45371C327BB100E5A789 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE45A6511C46034700AB9AAA /* ParseSubclasses */,
+				CE647BCC1C3A8B3300878F94 /* Categories */,
+				CE0B456C1C32827500E5A789 /* CJModel.h */,
+				CE0B456D1C32827500E5A789 /* CJModel.m */,
+				CE0B45251C32736900E5A789 /* WithMyBaby.xcdatamodeld */,
+				CE0B45661C32806000E5A789 /* CJLibrary */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		CE0B45381C327F6100E5A789 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE0B45751C3284B100E5A789 /* iOS 9.2 */,
+				CE0B45391C327F6900E5A789 /* Parse */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE0B45391C327F6900E5A789 /* Parse */ = {
+			isa = PBXGroup;
+			children = (
+				CE0B45461C327F7E00E5A789 /* Bolts.framework */,
+				CE0B45471C327F7E00E5A789 /* Parse.framework */,
+				CE0B45481C327F7E00E5A789 /* ParseFacebookUtils.framework */,
+				CE0B45491C327F7E00E5A789 /* ParseFacebookUtilsV4.framework */,
+				CE0B454A1C327F7E00E5A789 /* ParseTwitterUtils.framework */,
+				CE0B454B1C327F7E00E5A789 /* ParseUI.framework */,
+			);
+			name = Parse;
+			sourceTree = "<group>";
+		};
+		CE0B45661C32806000E5A789 /* CJLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				CE647BE51C3E575F00878F94 /* AFoundation */,
+				CE0B45681C32819B00E5A789 /* CJLibrary.h */,
+				CE647BC61C3A88D100878F94 /* CJAllertManager.h */,
+				CE647BC71C3A88D100878F94 /* CJAllertManager.m */,
+			);
+			name = CJLibrary;
+			sourceTree = "<group>";
+		};
+		CE0B45751C3284B100E5A789 /* iOS 9.2 */ = {
+			isa = PBXGroup;
+			children = (
+				CE0B457C1C32852500E5A789 /* Foundation.framework */,
+				CE0B457A1C32851400E5A789 /* UIKit.framework */,
+				CE0B45731C3284AC00E5A789 /* Accounts.framework */,
+				CE0B45711C3284A300E5A789 /* Social.framework */,
+				CE0B456F1C32849900E5A789 /* AdSupport.framework */,
+				CE0B45641C327FED00E5A789 /* libsqlite3.tbd */,
+				CE0B45781C3284F600E5A789 /* libstdc++.6.tbd */,
+				CE0B45621C327FE900E5A789 /* libz.tbd */,
+				CE0B45601C327FE400E5A789 /* SystemConfiguration.framework */,
+				CE0B455C1C327FD900E5A789 /* Security.framework */,
+				CE0B455A1C327FD400E5A789 /* QuartzCore.framework */,
+				CE0B45581C327FCF00E5A789 /* CoreLocation.framework */,
+				CE0B45561C327FC900E5A789 /* CoreGraphics.framework */,
+				CE0B45541C327FC300E5A789 /* CFNetwork.framework */,
+				CE0B45521C327FBB00E5A789 /* AudioToolbox.framework */,
+			);
+			name = "iOS 9.2";
+			sourceTree = "<group>";
+		};
+		CE45A6241C43AA0600AB9AAA /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				CE0B458A1C32A39900E5A789 /* SignInViewController.h */,
+				CE0B458B1C32A39900E5A789 /* SignInViewController.m */,
+				CE0B45871C32A37500E5A789 /* SignUpViewController.h */,
+				CE0B45881C32A37500E5A789 /* SignUpViewController.m */,
+				CE5C3D7F1C4E36060084685F /* ParentSignUpViewController.h */,
+				CE5C3D801C4E36060084685F /* ParentSignUpViewController.m */,
+				CE5C3D851C4E36830084685F /* ParentSignUpTableViewController.h */,
+				CE5C3D861C4E36830084685F /* ParentSignUpTableViewController.m */,
+				CE5C3D881C4E36A80084685F /* DoctorSignUpTableViewController.h */,
+				CE5C3D891C4E36A80084685F /* DoctorSignUpTableViewController.m */,
+			);
+			name = Authentication;
+			sourceTree = "<group>";
+		};
+		CE45A6251C43AA6200AB9AAA /* Doctor */ = {
+			isa = PBXGroup;
+			children = (
+				CE5C3D901C4F54BB0084685F /* Nutritions */,
+				CE5C3D8F1C4F54AF0084685F /* Vaccines */,
+				CE5C3D911C4F54C60084685F /* Diagnosis */,
+				CE647BBD1C3A47B500878F94 /* DoctorMainViewController.h */,
+				CE647BBE1C3A47B500878F94 /* DoctorMainViewController.m */,
+			);
+			name = Doctor;
+			sourceTree = "<group>";
+		};
+		CE45A6261C43AAB200AB9AAA /* Parent */ = {
+			isa = PBXGroup;
+			children = (
+				CE5C3D8D1C4F549B0084685F /* Childs */,
+				CE5C3D8C1C4F548B0084685F /* Nutritions */,
+				CE5C3D8B1C4F547E0084685F /* Vaccines */,
+				CE5C3D8E1C4F54A50084685F /* Diagnosis */,
+				CE647BC01C3A47C200878F94 /* ParentMainViewController.h */,
+				CE647BC11C3A47C200878F94 /* ParentMainViewController.m */,
+			);
+			name = Parent;
+			sourceTree = "<group>";
+		};
+		CE45A6511C46034700AB9AAA /* ParseSubclasses */ = {
+			isa = PBXGroup;
+			children = (
+				CE45A65E1C460F3400AB9AAA /* Doctor.h */,
+				CE45A65F1C460F3400AB9AAA /* Doctor.m */,
+				CE45A6611C46129500AB9AAA /* Parent.h */,
+				CE45A6621C46129500AB9AAA /* Parent.m */,
+				CE45A6671C4612BD00AB9AAA /* Child.h */,
+				CE45A6681C4612BD00AB9AAA /* Child.m */,
+				CE45A66A1C4612CC00AB9AAA /* Vaccine.h */,
+				CE45A66B1C4612CC00AB9AAA /* Vaccine.m */,
+				CE45A66D1C4612DC00AB9AAA /* Nutrition.h */,
+				CE45A66E1C4612DC00AB9AAA /* Nutrition.m */,
+				CE45A6731C46130100AB9AAA /* Complaint.h */,
+				CE45A6741C46130100AB9AAA /* Complaint.m */,
+				CE45A6701C4612EF00AB9AAA /* Diagnosis.h */,
+				CE45A6711C4612EF00AB9AAA /* Diagnosis.m */,
+				CE45A6641C4612AC00AB9AAA /* Comment.h */,
+				CE45A6651C4612AC00AB9AAA /* Comment.m */,
+			);
+			name = ParseSubclasses;
+			path = CJLibrary/AFoundation/Parse;
+			sourceTree = "<group>";
+		};
+		CE5C3D8B1C4F547E0084685F /* Vaccines */ = {
+			isa = PBXGroup;
+			children = (
+				CE45A6331C44B82C00AB9AAA /* ParentVaccinesViewController.h */,
+				CE45A6341C44B82C00AB9AAA /* ParentVaccinesViewController.m */,
+				CE45A6361C44B85400AB9AAA /* ParentVaccinesListViewController.h */,
+				CE45A6371C44B85400AB9AAA /* ParentVaccinesListViewController.m */,
+				CE45A6391C44B87100AB9AAA /* ParentVaccineDetailsViewController.h */,
+				CE45A63A1C44B87100AB9AAA /* ParentVaccineDetailsViewController.m */,
+				CE45A63C1C44B89500AB9AAA /* ParentVaccineAddExperienceViewController.h */,
+				CE45A63D1C44B89500AB9AAA /* ParentVaccineAddExperienceViewController.m */,
+				CE45A63F1C44B8E000AB9AAA /* ParentVaccinesExperienceViewController.h */,
+				CE45A6401C44B8E000AB9AAA /* ParentVaccinesExperienceViewController.m */,
+				CE5C3DAD1C50F3530084685F /* ParentVaccineExperienceDetailsViewController.h */,
+				CE5C3DAE1C50F3530084685F /* ParentVaccineExperienceDetailsViewController.m */,
+			);
+			name = Vaccines;
+			sourceTree = "<group>";
+		};
+		CE5C3D8C1C4F548B0084685F /* Nutritions */ = {
+			isa = PBXGroup;
+			children = (
+				CE45A62D1C44B7E800AB9AAA /* ParentNutritionViewController.h */,
+				CE45A62E1C44B7E800AB9AAA /* ParentNutritionViewController.m */,
+			);
+			name = Nutritions;
+			sourceTree = "<group>";
+		};
+		CE5C3D8D1C4F549B0084685F /* Childs */ = {
+			isa = PBXGroup;
+			children = (
+				CE45A6271C44B7A900AB9AAA /* MyChildViewController.h */,
+				CE45A6281C44B7A900AB9AAA /* MyChildViewController.m */,
+				CE45A62A1C44B7C100AB9AAA /* AddMyChildViewController.h */,
+				CE45A62B1C44B7C100AB9AAA /* AddMyChildViewController.m */,
+			);
+			name = Childs;
+			sourceTree = "<group>";
+		};
+		CE5C3D8E1C4F54A50084685F /* Diagnosis */ = {
+			isa = PBXGroup;
+			children = (
+				CE45A6421C44B8FA00AB9AAA /* ParentDiagnosisViewController.h */,
+				CE45A6431C44B8FA00AB9AAA /* ParentDiagnosisViewController.m */,
+				CE5C3D921C4F55B80084685F /* ParentDiagnosisNewComplaintViewController.h */,
+				CE5C3D931C4F55B80084685F /* ParentDiagnosisNewComplaintViewController.m */,
+			);
+			name = Diagnosis;
+			sourceTree = "<group>";
+		};
+		CE5C3D8F1C4F54AF0084685F /* Vaccines */ = {
+			isa = PBXGroup;
+			children = (
+				CE0B3DEA1C4A959E002BDF45 /* DoctorVaccinesViewController.h */,
+				CE0B3DEB1C4A959E002BDF45 /* DoctorVaccinesViewController.m */,
+				CE0B3DED1C4A95B0002BDF45 /* DoctorVaccineDetailsViewController.h */,
+				CE0B3DEE1C4A95B0002BDF45 /* DoctorVaccineDetailsViewController.m */,
+			);
+			name = Vaccines;
+			sourceTree = "<group>";
+		};
+		CE5C3D901C4F54BB0084685F /* Nutritions */ = {
+			isa = PBXGroup;
+			children = (
+				CE0B3DD81C48B2F6002BDF45 /* DoctorNutritionViewController.h */,
+				CE0B3DD91C48B2F6002BDF45 /* DoctorNutritionViewController.m */,
+				CE0B3DDB1C48B306002BDF45 /* DoctorNutritionDetailsViewController.h */,
+				CE0B3DDC1C48B306002BDF45 /* DoctorNutritionDetailsViewController.m */,
+			);
+			name = Nutritions;
+			sourceTree = "<group>";
+		};
+		CE5C3D911C4F54C60084685F /* Diagnosis */ = {
+			isa = PBXGroup;
+			children = (
+				CE5C3D9B1C4F56110084685F /* DoctorDiagnosisViewController.h */,
+				CE5C3D9C1C4F56110084685F /* DoctorDiagnosisViewController.m */,
+			);
+			name = Diagnosis;
+			sourceTree = "<group>";
+		};
+		CE5C3DA81C4F5F910084685F /* ParentsCells */ = {
+			isa = PBXGroup;
+			children = (
+				CE5C3DA21C4F5F3E0084685F /* ComplaintTVC.h */,
+				CE5C3DA31C4F5F3E0084685F /* ComplaintTVC.m */,
+				CE45A6481C450B5700AB9AAA /* MyChildTVC.h */,
+				CE45A6491C450B5700AB9AAA /* MyChildTVC.m */,
+				CE45A64E1C45205C00AB9AAA /* VaccinesParentExperienceTVC.h */,
+				CE45A64F1C45205C00AB9AAA /* VaccinesParentExperienceTVC.m */,
+				CE0B3DD51C47AC76002BDF45 /* ParentNutritionTVC.h */,
+				CE0B3DD61C47AC76002BDF45 /* ParentNutritionTVC.m */,
+			);
+			name = ParentsCells;
+			sourceTree = "<group>";
+		};
+		CE5C3DA91C4F5FA80084685F /* DocrotCells */ = {
+			isa = PBXGroup;
+			children = (
+				CE0B3DE71C4A954B002BDF45 /* DoctorVaccinesTVC.h */,
+				CE0B3DE81C4A954C002BDF45 /* DoctorVaccinesTVC.m */,
+				CE0B3DE11C48BD73002BDF45 /* DoctorNutritionTVC.h */,
+				CE0B3DE21C48BD73002BDF45 /* DoctorNutritionTVC.m */,
+				CE0B3DE41C48BE30002BDF45 /* DoctorNutritionDetailsTVC.h */,
+				CE0B3DE51C48BE30002BDF45 /* DoctorNutritionDetailsTVC.m */,
+			);
+			name = DocrotCells;
+			sourceTree = "<group>";
+		};
+		CE647BB81C3A3B6100878F94 /* TVC */ = {
+			isa = PBXGroup;
+			children = (
+				CE5C3DA91C4F5FA80084685F /* DocrotCells */,
+				CE5C3DA81C4F5F910084685F /* ParentsCells */,
+				CE45A64B1C45163500AB9AAA /* VaccinesTVC.h */,
+				CE45A64C1C45163500AB9AAA /* VaccinesTVC.m */,
+				CE5C3DA51C4F5F4E0084685F /* ChatTVC.h */,
+				CE5C3DA61C4F5F4E0084685F /* ChatTVC.m */,
+				CE5C3DAA1C4F5FC10084685F /* InquiriesTVC.h */,
+				CE5C3DAB1C4F5FC10084685F /* InquiriesTVC.m */,
+			);
+			name = TVC;
+			sourceTree = "<group>";
+		};
+		CE647BB91C3A3B6900878F94 /* CVC */ = {
+			isa = PBXGroup;
+			children = (
+				CE45A6451C44F8AC00AB9AAA /* ButtonStyleCollectionViewCell.h */,
+				CE45A6461C44F8AC00AB9AAA /* ButtonStyleCollectionViewCell.m */,
+			);
+			name = CVC;
+			sourceTree = "<group>";
+		};
+		CE647BCC1C3A8B3300878F94 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				CEF380A61C52388B00DB31D1 /* NSString+TBEncryption.h */,
+				CEF380A71C52388B00DB31D1 /* NSString+TBEncryption.m */,
+				CE647BC91C3A8AC100878F94 /* NSString+CJString.h */,
+				CE647BCA1C3A8AC100878F94 /* NSString+CJString.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		CE647BE51C3E575F00878F94 /* AFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				CE647BF51C3E5FBB00878F94 /* Parse */,
+				CE647BE91C3E575F00878F94 /* AFoundation.h */,
+				CE45A6221C436EBC00AB9AAA /* AFClientManagerProtocols.h */,
+				CE647BE61C3E575F00878F94 /* AFClientManager.h */,
+				CE647BE71C3E575F00878F94 /* AFClientManager.m */,
+				CE647BF21C3E5F9D00878F94 /* AFObject.h */,
+				CE647BF31C3E5F9D00878F94 /* AFObject.m */,
+				CE647BFF1C3E63E400878F94 /* AFManagerSettings.h */,
+				CE647C001C3E63E400878F94 /* AFManagerSettings.m */,
+			);
+			name = AFoundation;
+			path = CJLibrary/AFoundation;
+			sourceTree = "<group>";
+		};
+		CE647BF51C3E5FBB00878F94 /* Parse */ = {
+			isa = PBXGroup;
+			children = (
+				CE647C021C3E788900878F94 /* AFParseClientManager.h */,
+				CE647C031C3E788900878F94 /* AFParseClientManager.m */,
+				CE647BF81C3E5FBB00878F94 /* AFParseObject.h */,
+				CE647BF91C3E5FBB00878F94 /* AFParseObject.m */,
+				CE647BFC1C3E62B100878F94 /* AFParseSettings.h */,
+				CE647BFD1C3E62B100878F94 /* AFParseSettings.m */,
+			);
+			path = Parse;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE0B45151C32736900E5A789 /* WithMyBaby */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE0B45301C32736900E5A789 /* Build configuration list for PBXNativeTarget "WithMyBaby" */;
+			buildPhases = (
+				CE0B45121C32736900E5A789 /* Sources */,
+				CE0B45131C32736900E5A789 /* Frameworks */,
+				CE0B45141C32736900E5A789 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WithMyBaby;
+			productName = WithMyBaby;
+			productReference = CE0B45161C32736900E5A789 /* WithMyBaby.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE0B450E1C32736900E5A789 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Nasser;
+				TargetAttributes = {
+					CE0B45151C32736900E5A789 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = M8GBEW6VJ8;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = CE0B45111C32736900E5A789 /* Build configuration list for PBXProject "WithMyBaby" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE0B450D1C32736900E5A789;
+			productRefGroup = CE0B45171C32736900E5A789 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE0B45151C32736900E5A789 /* WithMyBaby */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE0B45141C32736900E5A789 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE0B452C1C32736900E5A789 /* LaunchScreen.storyboard in Resources */,
+				CE647BDA1C3CFB6400878F94 /* Assets.xcassets in Resources */,
+				CE0B45241C32736900E5A789 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE0B45121C32736900E5A789 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE45A63E1C44B89500AB9AAA /* ParentVaccineAddExperienceViewController.m in Sources */,
+				CE647BBF1C3A47B500878F94 /* DoctorMainViewController.m in Sources */,
+				CE0B3DEF1C4A95B0002BDF45 /* DoctorVaccineDetailsViewController.m in Sources */,
+				CE5C3D9A1C4F55E60084685F /* NewMessageViewController.m in Sources */,
+				CE0B3DE91C4A954C002BDF45 /* DoctorVaccinesTVC.m in Sources */,
+				CE45A6601C460F3400AB9AAA /* Doctor.m in Sources */,
+				CE5C3D871C4E36830084685F /* ParentSignUpTableViewController.m in Sources */,
+				CE647C011C3E63E400878F94 /* AFManagerSettings.m in Sources */,
+				CE5C3D9D1C4F56110084685F /* DoctorDiagnosisViewController.m in Sources */,
+				CE0B3DE61C48BE30002BDF45 /* DoctorNutritionDetailsTVC.m in Sources */,
+				CE0B3DDA1C48B2F6002BDF45 /* DoctorNutritionViewController.m in Sources */,
+				CE0B45891C32A37500E5A789 /* SignUpViewController.m in Sources */,
+				CE45A6631C46129500AB9AAA /* Parent.m in Sources */,
+				CE0B3DD71C47AC76002BDF45 /* ParentNutritionTVC.m in Sources */,
+				CE45A6321C44B7FB00AB9AAA /* SettingsViewController.m in Sources */,
+				CE647BC81C3A88D100878F94 /* CJAllertManager.m in Sources */,
+				CE45A66C1C4612CC00AB9AAA /* Vaccine.m in Sources */,
+				CE5C3DAC1C4F5FC10084685F /* InquiriesTVC.m in Sources */,
+				CEF380A81C52388B00DB31D1 /* NSString+TBEncryption.m in Sources */,
+				CE45A6751C46130100AB9AAA /* Complaint.m in Sources */,
+				CE45A6721C4612EF00AB9AAA /* Diagnosis.m in Sources */,
+				CE647C041C3E788900878F94 /* AFParseClientManager.m in Sources */,
+				CE0B451E1C32736900E5A789 /* AppDelegate.m in Sources */,
+				CE45A64D1C45163500AB9AAA /* VaccinesTVC.m in Sources */,
+				CE647BFE1C3E62B100878F94 /* AFParseSettings.m in Sources */,
+				CE45A6691C4612BD00AB9AAA /* Child.m in Sources */,
+				CE647BF41C3E5F9D00878F94 /* AFObject.m in Sources */,
+				CE0B456E1C32827500E5A789 /* CJModel.m in Sources */,
+				CE5C3DAF1C50F3530084685F /* ParentVaccineExperienceDetailsViewController.m in Sources */,
+				CE647BCB1C3A8AC100878F94 /* NSString+CJString.m in Sources */,
+				CE647BEE1C3E575F00878F94 /* AFClientManager.m in Sources */,
+				CE45A6351C44B82C00AB9AAA /* ParentVaccinesViewController.m in Sources */,
+				CE647BFB1C3E5FBB00878F94 /* AFParseObject.m in Sources */,
+				CE0B3DE31C48BD73002BDF45 /* DoctorNutritionTVC.m in Sources */,
+				CE45A62F1C44B7E800AB9AAA /* ParentNutritionViewController.m in Sources */,
+				CE0B451B1C32736900E5A789 /* main.m in Sources */,
+				CE45A6501C45205C00AB9AAA /* VaccinesParentExperienceTVC.m in Sources */,
+				CE45A6661C4612AC00AB9AAA /* Comment.m in Sources */,
+				CE0B45271C32736900E5A789 /* WithMyBaby.xcdatamodeld in Sources */,
+				CE647BC21C3A47C200878F94 /* ParentMainViewController.m in Sources */,
+				CE5C3DA71C4F5F4E0084685F /* ChatTVC.m in Sources */,
+				CE5C3DA11C4F577E0084685F /* ChatViewController.m in Sources */,
+				CE0B3DEC1C4A959E002BDF45 /* DoctorVaccinesViewController.m in Sources */,
+				CE45A6381C44B85400AB9AAA /* ParentVaccinesListViewController.m in Sources */,
+				CE45A62C1C44B7C100AB9AAA /* AddMyChildViewController.m in Sources */,
+				CE45A6411C44B8E000AB9AAA /* ParentVaccinesExperienceViewController.m in Sources */,
+				CE0B45861C32A35500E5A789 /* LaunchViewController.m in Sources */,
+				CE0B3DDD1C48B306002BDF45 /* DoctorNutritionDetailsViewController.m in Sources */,
+				CE5C3D941C4F55B80084685F /* ParentDiagnosisNewComplaintViewController.m in Sources */,
+				CE647BC51C3A4E9C00878F94 /* AbstractViewController.m in Sources */,
+				CE5C3D8A1C4E36A80084685F /* DoctorSignUpTableViewController.m in Sources */,
+				CE45A6441C44B8FA00AB9AAA /* ParentDiagnosisViewController.m in Sources */,
+				CE45A66F1C4612DC00AB9AAA /* Nutrition.m in Sources */,
+				CE45A6291C44B7A900AB9AAA /* MyChildViewController.m in Sources */,
+				CE5C3D811C4E36060084685F /* ParentSignUpViewController.m in Sources */,
+				CE45A63B1C44B87100AB9AAA /* ParentVaccineDetailsViewController.m in Sources */,
+				CE0B458C1C32A39900E5A789 /* SignInViewController.m in Sources */,
+				CE5C3DA41C4F5F3E0084685F /* ComplaintTVC.m in Sources */,
+				CE45A64A1C450B5700AB9AAA /* MyChildTVC.m in Sources */,
+				CE45A6471C44F8AC00AB9AAA /* ButtonStyleCollectionViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CE0B45221C32736900E5A789 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE0B45231C32736900E5A789 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CE0B452A1C32736900E5A789 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE0B452B1C32736900E5A789 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE0B452E1C32736900E5A789 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE0B452F1C32736900E5A789 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE0B45311C32736900E5A789 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = WithMyBaby/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = Nasser.WithMyBaby;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE0B45321C32736900E5A789 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = WithMyBaby/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = Nasser.WithMyBaby;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE0B45111C32736900E5A789 /* Build configuration list for PBXProject "WithMyBaby" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE0B452E1C32736900E5A789 /* Debug */,
+				CE0B452F1C32736900E5A789 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE0B45301C32736900E5A789 /* Build configuration list for PBXNativeTarget "WithMyBaby" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE0B45311C32736900E5A789 /* Debug */,
+				CE0B45321C32736900E5A789 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CE0B45251C32736900E5A789 /* WithMyBaby.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CE0B45261C32736900E5A789 /* WithMyBaby.xcdatamodel */,
+			);
+			currentVersion = CE0B45261C32736900E5A789 /* WithMyBaby.xcdatamodel */;
+			path = WithMyBaby.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CE0B450E1C32736900E5A789 /* Project object */;
+}
